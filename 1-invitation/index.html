@@ -26,15 +26,27 @@
   <![endif]-->
   <style type="text/css">
     @media only screen and (max-width:600px) {
+
       p,
       a {
         font-size: 16px !important;
         line-height: 150% !important
       }
 
+      h1 {
+        font-size: 28px !important;
+        line-height: 120% !important;
+      }
+
       h2 {
         font-size: 22px !important;
         line-height: 120% !important;
+      }
+
+      .header-text,
+      .header-text a {
+        font-size: 11px !important;
+        line-height: 150% !important
       }
 
       .button-border {
@@ -51,6 +63,7 @@
       .content-right {
         width: 100% !important
       }
+
       .content table,
       .content {
         width: 100% !important;
@@ -63,6 +76,16 @@
       }
     }
 
+    .invitation br {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .invitation br {
+        display: initial;
+      }
+    }
+
     #outlook a {
       padding: 0;
     }
@@ -72,6 +95,7 @@
       text-decoration: none !important;
     }
   </style>
+
 <body
   style="width:100%;padding:0;Margin:0;font-family:'trebuchet ms', tahoma, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
   <div style="background-color: #FFFFFF;">
@@ -80,8 +104,7 @@
   				<v:fill type="tile" color="#ffffff;"></v:fill>
   			</v:background>
 		  <![endif]-->
-    <table align="center" class="content" width="600" cellspacing="0" cellpadding="0" border="0"
-      bgcolor="#e5e5e5"
+    <table align="center" class="content" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#e5e5e5"
       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#e5e5e5;width:600px;">
       <tr>
         <td>
@@ -93,7 +116,7 @@
                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#e5e5e5;width:600px;">
                   <tr>
                     <td align="center" style="padding-top:24px;padding-bottom:16px;padding-left:0;padding-right:0;">
-                      <p
+                      <p class="header-text"
                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#141414;">
                         Если вы&nbsp;не&nbsp;видите данное письмо, перейдите по&nbsp;<a target="_blank" href="#"
                           style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:11px;text-decoration:underline;color:#13D6C3;"><b>ссылке</b></a>
@@ -128,15 +151,16 @@
                             style="Margin:0;padding-top:0;padding-bottom:16px;padding-left:0;padding-right:0;">
                             <h1
                               style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:36px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:42px;color:#0B379B;">
-                              <b>Хотите научиться web-разработке?</b></h1>
+                              <b>Хотите научиться<br>web-разработке?</b></h1>
                           </td>
                         </tr>
                         <tr>
                           <td align="center" width="100%" cellspacing="0" cellpadding="0" border="0"
                             style="Margin:0;padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:16px;">
-                            <p
-                              style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#FF4B33;">
-                              <b>Приглашаем Вас на&nbsp;бесплатный вебинар&nbsp;«Тренды Frontend-разработки 2020»</b>
+                            <p class="invitation"
+                              style="display:inline-block;Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#FF4B33;">
+                              <b>Приглашаем Вас<br>&nbsp;на&nbsp;бесплатный вебинар&nbsp;<br>«Тренды
+                                Frontend-разработки<br> 2020»</b>
                             </p>
                           </td>
                         </tr>
