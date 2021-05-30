@@ -29,13 +29,13 @@
 
       p,
       a {
-        font-size: 16px !important;
-        line-height: 150% !important
+        font-size: 18px !important;
+        line-height: 21px !important
       }
 
       h2 {
-        font-size: 22px !important;
-        line-height: 120% !important;
+        font-size: 30px !important;
+        line-height: 35px !important;
       }
 
       .button-border {
@@ -43,9 +43,11 @@
       }
 
       a.button {
-        font-size: 20px !important;
+        font-size: 18px !important;
         display: block !important;
         border-width: 10px 0px 10px 0px !important;
+        width: 176px;
+    box-sizing: border-box;
       }
 
       .content-left,
@@ -85,8 +87,21 @@
         padding-left: 16px !important;
       }
 
+      .mobile-content-p8l {
+        padding-left: 8px !important;
+      }
+
+
       .mobile-content-p16r {
         padding-right: 16px !important;
+      }
+
+      .mobile-content-p9r {
+        padding-right: 9px !important;
+      }
+
+      .mobile-content-p9b {
+        padding-bottom: 9px !important;
       }
 
       .mobile-content-p20r {
@@ -97,6 +112,10 @@
         padding-bottom: 32px !important;
       }
 
+      .mobile-content-p16b {
+        padding-bottom: 16px !important;
+      }
+
       .mobile-content-p40t {
         padding-top: 40px !important;
       }
@@ -105,8 +124,23 @@
         padding-top: 24px !important;
       }
 
+      .mobile-content-p24v {
+        padding-top: 24px !important;
+        padding-bottom: 24px !important;
+      }
+
+      .mobile-content-p16h {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+
+
       .mobile-content-p19b {
         padding-bottom: 19px !important;
+      }
+
+      .mobile-content-p19l {
+        padding-left: 19px !important;
       }
 
       .mobile-content-p0t {
@@ -129,16 +163,34 @@
         line-height: 16px !important
     }
 
-    .social-text p,
-    .social-text a {
+    .footer-text p,
+    .footer-text a {
         font-size: 11px !important;
         line-height: 13px !important;
       }
 
 .social {
   border:0 !important;
-}
+  }
 
+.social-text {
+  font-size: 16px !important;
+        line-height: 19px !important;
+}
+  .greeting {
+        font-size: 16px !important;
+        line-height: 19px !important
+      }
+    }
+
+    .break br {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .break br {
+        display: initial;
+      }
     }
 
     #outlook a {
@@ -188,7 +240,7 @@
                 <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                   <tr>
-                    <td align="center" class="menu-mobile mobile-content-p32b mobile-content-p16l mobile-content-p15r"
+                    <td align="center" class="menu-mobile mobile-content-p32b mobile-content-p8l mobile-content-p15r"
                       style="padding-top:0;padding-bottom:26px;padding-left:32px;padding-right:32px;">
                       <table class="not-adaptive" align="center" cellpadding="0" cellspacing="0" border="0"
                         style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;display:inline-table;">
@@ -267,16 +319,16 @@
                 </table>
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td>
+                    <td align="left">
                       <table bgcolor="#0B379B" class="content-body" align="center" cellpadding="0" cellspacing="0"
                         style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#0B379B;width:600px;">
                         <tr>
                           <td>
-                            <table
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;Margin:0;padding-top:0;padding-bottom:0;padding-left:32px;padding-right:0;">
+                            <table align="left"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;Margin:0;float:left;width: 65%;">
                               <tr>
-                                <td>
-                                  <p
+                                <td class="mobile-content-p24v mobile-content-p19l mobile-content-p9r" style="padding-top:32px;padding-bottom:0;padding-left:32px;padding-right:0;">
+                                  <p class="greeting"
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#13D6C3;padding:0;padding-bottom:26px;">
                                     <b>Здравствуйте, {{name}}</b></p>
                                 </td>
@@ -284,9 +336,8 @@
                               <tr>
                               </tr>
                               <tr>
-                                <td>
-                                  <p
-                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">
+                                <td style="padding-top:0;padding-bottom:0;padding-left:32px;padding-right:0;">
+                                  <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">
                                     Благодарим вас за&nbsp;регистрацию на&nbsp;курс &laquo;Начальный html+css&raquo;.
                                   </p>
                                 </td>
@@ -295,20 +346,18 @@
                                 <p style="Margin:0;">&nbsp;</p>
                               </td>
                               <tr>
-                                <td>
-                                  <p
+                                <td style="padding-top:0;padding-bottom:0;padding-left:32px;padding-right:0;">
+                                  <p class="break"
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">
-                                    Курс стартует 1&nbsp;июля в&nbsp;17.00 по&nbsp;московскому времени. Письма
+                                    Курс стартует 1&nbsp;июля в&nbsp;17.00 по&nbsp;московскому времени.<br> Письма
                                     со&nbsp;ссылками для входа в&nbsp;кабинет придут на&nbsp;указанную почту
                                     за&nbsp;день до&nbsp;старта курса.</p>
                                 </td>
                               </tr>
                             </table>
-                          </td>
-                          <td>
-                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <table align="right" cellspacing="0" cellpadding="0" border="0" style="float:right;">
                               <tr>
-                                <td style="Margin:0;padding:0;padding-right:32px;">
+                                <td class="mobile-content-p0r mobile-content-p16b"  valign="middle" align="center" style="Margin:0;padding:0;padding-right:32px;">
                                   <img
                                     src="https://raw.githubusercontent.com/shidder/126658-play-html-1/master/2-welcome/img/Croods-Standing.png"
                                     alt="картинка" width="175" height="269" />
@@ -324,17 +373,17 @@
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
                     <td>
-                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;padding-top:48px;padding-bottom:48px;padding-left:29px;padding-right:29px;">
+                      <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
-                          <td>
+                          <td class="content-body mobile-content-p40t mobile-content-p16h" style="padding-top:48px;padding-bottom:48px;padding-left:29px;padding-right:29px;">
                             <table>
                               <tr>
                                 <td align="center"
                                   style="Margin:0;padding-top:0;padding-bottom:24px;padding-left:0;padding-right:0;">
                                   <h2
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#FF4B33;">
-                                    <b>Что вас ждет на курсе</b></h2>
+                                    <b>Что вас ждет на&nbsp;курсе</b></h2>
                                 </td>
                               </tr>
                               <tr>
@@ -369,10 +418,10 @@
                               </tr>
                               <tr>
                                 <td>
-                                  <p
+                                  <p class="break"
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
                                     После завершения курса вам нужно будет подготовить свой проект
-                                    к&nbsp;защите&nbsp;&mdash; убедиться, что он&nbsp;реализован в&nbsp;соответствии
+                                    к&nbsp;защите&nbsp;&mdash;&nbsp;убедиться, что&nbsp;он реализован в&nbsp;соответствии
                                     с&nbsp;техническим заданием.
                                   </p>
                                 </td>
@@ -387,7 +436,7 @@
                                   <p
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
                                     Желаем вам продуктивной работы на&nbsp;интенсиве и&nbsp;успешной защиты. У&nbsp;вас
-                                    всё получится, мы&nbsp;в&nbsp;вас верим!
+                                    всё получится,&nbsp;мы в&nbsp;вас верим!
                                   </p>
                                 </td>
                               </tr>
@@ -402,9 +451,9 @@
                   <tr>
                     <td>
                       <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;padding-top:0;padding-bottom:48px;padding-left:32px;padding-right:32px;">
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
-                          <td>
+                          <td  class="mobile-content-p16h" style="padding-top:0;padding-bottom:48px;padding-left:32px;padding-right:32px;">
                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
                               <tr>
                                 <td align="center"
@@ -415,7 +464,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td align="center"
+                                <td class="mobile-content-p0t" align="center"
                                   style="Margin:0;padding-top:24px;padding-bottom:36px;padding-left: 0px;padding-right: 0px;">
                                   <table align="left" cellpadding="0" cellspacing="0" border="0"
                                     style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;float:left;">
@@ -511,7 +560,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td class="mobile-content-p9r">
                                   <p
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
                                     Пока вы&nbsp;ждёте начала курса, вам могут быть интересны вебинары на&nbsp;разные
@@ -529,9 +578,9 @@
                   <tr>
                     <td>
                       <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:16px;">
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
-                          <td>
+                          <td class="mobile-content-p9b" style="padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:16px;">
                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
                               <tr>
                                 <td align="center"
@@ -544,10 +593,10 @@
                               <tr>
                                 <td style="padding-bottom: 16px;">
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                    style="Margin:0;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:0;border: 1px #02BAD3 solid; border-radius: 15px;">
+                                    style="Margin:0;border: 1px #02BAD3 solid; border-radius: 15px;">
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:8px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:24px;padding-bottom:8px;padding-left:16px;padding-right:0;">
                                         <h3
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
                                           <b>Тренды frontend-разработки</b></h3>
@@ -555,14 +604,14 @@
                                     </tr>
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:16px;padding-right:0;">
                                         <p
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
                                           <b>20 июня, 17:00</b></p>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td>
+                                      <td style="Margin:0;padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:0;">
                                         <p
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
                                           Самые многообещающие направления развития фронтенда в&nbsp;2020 году
@@ -575,10 +624,10 @@
                               <tr>
                                 <td style="padding-bottom: 16px;">
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                    style="Margin:0;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:0;border: 1px #02BAD3 solid; border-radius: 15px;">
+                                    style="Margin:0;border: 1px #02BAD3 solid; border-radius: 15px;">
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:8px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:24px;padding-bottom:8px;padding-left:16px;padding-right:0;">
                                         <h3
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
                                           <b>Figma vs Photoshop</b></h3>
@@ -586,14 +635,14 @@
                                     </tr>
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:16px;padding-right:0;">
                                         <p
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
                                           <b>21 июня, 17:00</b></p>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td>
+                                      <td style="Margin:0;padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:0;">
                                         <p
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
                                           Почему давно пора отказаться от&nbsp;последнего?</p>
@@ -604,11 +653,11 @@
                               </tr>
                               <tr>
                                 <td style="padding-bottom: 16px;">
-                                  <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                    style="Margin:0;padding-top:24px;padding-bottom:24px;padding-left:16px;padding-right:0;border: 1px #02BAD3 solid; border-radius: 15px;">
+                                  <table class="mobile-content-p16r" width="100%" cellspacing="0" cellpadding="0" border="0"
+                                    style="Margin:0;border: 1px #02BAD3 solid; border-radius: 15px;">
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:8px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:24px;padding-bottom:8px;padding-left:16px;padding-right:0;">
                                         <h3
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
                                           <b>Что такое Git и&nbsp;как его использовать?</b></h3>
@@ -616,14 +665,14 @@
                                     </tr>
                                     <tr>
                                       <td
-                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:0;padding-right:0;">
+                                        style="Margin:0;padding-top:0;padding-bottom:18px;padding-left:16px;padding-right:0;">
                                         <p
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
                                           <b>22 июня, 17:00</b></p>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td>
+                                      <td style="Margin:0;padding-top:0;padding-bottom:24px;padding-left:16px;padding-right:0;">
                                         <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;"">Разберем тонкости использования самой популярной системы контроля версий.</p>
                                 </td>
                               </tr>
@@ -633,7 +682,7 @@
                         <tr>
                           <td align=" center"
                                           style="padding-top: 24px; padding-bottom:0; padding-left: 0; padding-right:0;">
-                                          <a style="Margin:0;background-color:
+                                          <a class="button" style="Margin:0 auto;background-color:
                             #FF4B33;padding-top:8px;padding-bottom:8px;padding-left:16px;padding-right:16px;border-radius:5px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;text-decoration:none;"
                                             href="#" target="_blank">Все мероприятия</a>
                                       </td>
@@ -669,17 +718,17 @@
                               <tr>
                                 <td align="left" style="padding:0;Margin:0;">
 
-                                  <table class="mobile-content-p32b social" bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="left"
-                                    style="padding-top:16px;padding-bottom:20px;padding-left:35px;padding-right:37px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;float:left;border-bottom:1px solid #E0E0E0;">
+                                  <table class="social" bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="left"
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;float:left;border-bottom:1px solid #E0E0E0;">
                                     <tbody>
                                       <tr>
-                                        <td align="left" style="padding:0;Margin:0;width:185px;">
+                                        <td class="mobile-content-p32b mobile-content-p16l" align="left" style="padding-top:16px;padding-bottom:20px;padding-left:32px;padding-right:37px;Margin:0;width:185px;">
                                           <table cellpadding="0" cellspacing="0"
                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
                                             <tbody>
                                               <tr>
                                                 <td style="Margin:0;padding:0;padding-bottom:18px;">
-                                                  <p
+                                                  <p class="social-text"
                                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
                                                     <b>Мы&nbsp;в&nbsp;социальных сетях</b></p>
                                                 </td>
@@ -720,7 +769,7 @@
                                               </tr>
                                               <tr>
                                                 <td style="Margin:0;padding:0;padding-bottom:10px;">
-                                                  <p
+                                                  <p class="social-text"
                                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
                                                     <b>Свяжитесь с&nbsp;нами</b></p>
                                                 </td>
@@ -741,17 +790,17 @@
                                       </tr>
                                     </tbody>
                                   </table>
-                                  <table class="mobile-content-p0t mobile-content-p0r mobile-content-p19b" bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="right"
-                                    style="padding-top:16px;padding-bottom:25px;padding-left:35px;padding-right:126px;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;float:right;border-bottom:1px solid #E0E0E0;">
+                                  <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" align="right"
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;float:right;border-bottom:1px solid #E0E0E0;">
                                     <tbody>
                                       <tr>
-                                        <td style="padding:0;Margin:0;width:150px;">
+                                        <td class="mobile-content-p0t mobile-content-p0r mobile-content-p19b mobile-content-p16l" style="padding-top:16px;padding-bottom:25px;padding-left:35px;padding-right:126px;Margin:0;width:150px;">
                                           <table cellpadding="0" cellspacing="0"
                                             style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;">
                                             <tbody>
                                               <tr>
                                                 <td style="Margin:0;padding:0;padding-bottom:18px;">
-                                                  <p
+                                                  <p class="social-text"
                                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
                                                     <b>Полезные ссылки</b></p>
                                                 </td>
@@ -795,11 +844,11 @@
                       </table>
                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                         <tr>
-                          <td class="mobile-content-p0r" style="padding-left:16px;padding-right:16px;">
-                            <table class="content-body mobile-content-p24t social-text" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#ffffff;width:568px;padding-top:56px;padding-bottom:32px;padding-left:0;padding-right:0;">
+                          <td style="padding-left:16px;padding-right:16px;">
+                            <table class="content-body footer-text" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#ffffff;width:568px;">
                               <tr>
-                                <td>
+                                <td class="mobile-content-p24t" style="padding-top:32px;padding-bottom:0;padding-left:0;padding-right:0;">
                                   <p
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">
                                     Вы&nbsp;получили это письмо, так как являетесь пользователем портала HTMLPlay. Рассылка
@@ -817,7 +866,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>
+                                <td style="padding-top:0;padding-bottom:32px;padding-left:0;padding-right:0;">
                                   <p
                                     style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">
                                     Если письмо отображается некорректно или вы хотите им&nbsp;поделиться, <a
